@@ -146,14 +146,10 @@ class Cards
     after_1 = step_1
     i = 0
     after_1.each do |state_1|
-      after_2 = step_2(state_1)
-      after_2.each do |state_2|
-        after_3 = step_3(state_2)
-        after_3.each do |state_3|
-          after_4 = step_4(state_3)
-          after_4.each do |state_4|
-            after_5 = step_5(state_4)
-            after_5.each do |state_5|
+      step_2(state_1).each do |state_2|
+        step_3(state_2).each do |state_3|
+          step_4(state_3).each do |state_4|
+            step_5(state_4).each do |state_5|
               step_6(state_5).each do |state_6|
                 step_7(state_6).each do |state_7|
                   step_8(state_7).each do |state_8|
@@ -169,7 +165,9 @@ class Cards
       end
     end 
     puts "Valid states: "
-    working_states.uniq.each {|i| puts i.to_s}
+    working_states.uniq.each do |i|
+      puts i.to_s + "\n\n"
+    end
   end
 end
 
