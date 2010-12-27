@@ -4,7 +4,7 @@ I got tired of it [looking like this](http://twitpic.com/3jzmwa)
 
 To solve it, run `solver.rb`
 
-Returned are a set of answers, each with 9 tiles defined this way:
+Returned are a set of answers, each with 9 tiles defined this way (as elements in the array)
 <pre>
 0 1 2
 3 4 5
@@ -12,10 +12,13 @@ Returned are a set of answers, each with 9 tiles defined this way:
 </pre>
 
 Each element in the array has four values, representing the images on the top, right, bottom, and left sides, in that order.  The images are coded as two-character values, with the image defined as the *first* character, and the ordinality as the *second*. For example:
- * WB: the *W*oman image, *B*ottom
+
+ * WB: the **W**oman image, **B**ottom
+ * CT: the **C**lub image, **T**op
 
  The codes are:
- * *W*oman
- * *B*ag
- * *M*an
- * *C*lub
+
+ * **W**oman
+ * **B**ag
+ * **M**an
+ * **C**lub
