@@ -2,7 +2,7 @@ A script to solve the "Scramble Squares" [tile puzzle, Golf style](http://www.b-
 
 I got tired of it [looking like this](http://twitpic.com/3jzmwa)
 
-To solve it, run `solver.rb`
+To solve it, run `ruby solver.rb`
 
 Returned are a set of answers, each with 9 tiles defined this way (as elements in the array)
 <pre>
